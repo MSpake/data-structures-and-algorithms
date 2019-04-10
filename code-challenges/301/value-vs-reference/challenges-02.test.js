@@ -27,7 +27,8 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+  arr.push(arr[0]);
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -107,7 +108,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should append by modifying the oiginal', () => {
     const a = ['Yes', 'it', 'is'];
     appendFirstToLast(a);
