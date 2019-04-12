@@ -54,7 +54,8 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
+
+  // if (/^(oc)(.)\S{1,6}/.test(input)) return true;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,7 +69,7 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  // if (/\s$/)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +85,8 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  // Solution code here...
+  const hangmanString = str.replace(/a|e|i|o|u/g, '_');
+  return hangmanString;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -181,7 +183,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   let startString = 'This is a regex challenge. We are trying to create a hangman phrase where all of the vowels are missing!';
 
   test('It should remove the vowels from the hangman string and replace them with underscores', () => {
