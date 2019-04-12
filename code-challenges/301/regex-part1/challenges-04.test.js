@@ -54,8 +54,10 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-
-  // if (/^(oc)(.)\S{1,6}/.test(input)) return true;
+  if ((typeof input) !== 'string') { input = input.toString(); }
+  const new_str = input.replace(/O/, 'o');
+  if (/^october$/.test(new_str)) return true;
+  if (/^oct$/.test(new_str)) return true;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -154,7 +156,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should match any of the acceptable inputs', () => {
     expect(matchMonth('Oct')).toBeTruthy();
     expect(matchMonth('oct')).toBeTruthy();
