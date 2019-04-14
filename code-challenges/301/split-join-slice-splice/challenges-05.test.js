@@ -135,11 +135,11 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
-  // do {
-  //   for (let i in arr) {
-  //     if (!(arr[i] % 2)) arr.splice(i, 1);
-  //   }
-  // } while (arr.every((val) => !(val % 2)));
+  do {
+    for (let i in arr) {
+      if (!(arr[i] % 2)) arr.splice(i, 1);
+    }
+  } while (arr.some((val) => !(val % 2)));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -264,7 +264,7 @@ describe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should remove the even numbers from the array', () => {
     let list = [1, 2, 3, 4, 5, 6];
     removeEvenValues(list);
