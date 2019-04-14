@@ -203,7 +203,16 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
-  // Solution code here...
+  const vowels = str.match(/a|e|i|o|u/g);
+  vowels.sort((a, b) => {
+    if (a > b) return 1;
+    if (a < b) return -1;
+    return 0;
+  });
+  const letters = str.split(/a|e|i|o|u/g);
+  const newString = letters.join('');
+  const vowelsString = vowels.join('');
+  return [newString, vowelsString];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -300,7 +309,7 @@ describe('Testing challenge 9', () => {
   });
 });
 
-xdescribe('Testing challenge 10', () => {
+describe('Testing challenge 10', () => {
   test('It should return the string without vowels', () => {
     expect(extractVowels('gregor')).toStrictEqual(['grgr', 'eo']);
     expect(extractVowels('gregor').length).toStrictEqual(2);
