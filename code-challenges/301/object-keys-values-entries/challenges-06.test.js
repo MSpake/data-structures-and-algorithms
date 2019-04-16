@@ -70,7 +70,7 @@ let characters = [{
 ];
 
 const totalCharacters = (arr) => {
-  return Object.entries(arr).length;
+  return arr.length;
 };
 
 /*------------------------------------------------------------------------------------------------
@@ -100,7 +100,14 @@ hasChildrenValues(characters, 'Eddard') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  let children;
+  arr.forEach(entry => {
+    if (Object.values(entry)[0] === character) {
+      if (Object.values(entry)[2].length) children = true;
+      else children = false;
+    }
+  });
+  return children;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -112,7 +119,11 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
-  // Solution code here...
+  arr.forEach(entry => {
+    if (entry.name === character) {
+
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -185,7 +196,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenValues(characters, 'Daenarys')).toBeTruthy();
   });
