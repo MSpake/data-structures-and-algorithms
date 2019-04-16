@@ -119,11 +119,14 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
+  let children;
   arr.forEach(entry => {
-    if (entry.name === character) {
-
+    if (Object.entries(entry)[0][1] === character) {
+      if (Object.entries(entry)[2][1].length) children = true;
+      else children = false;
     }
   });
+  return children;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -206,7 +209,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
   });
