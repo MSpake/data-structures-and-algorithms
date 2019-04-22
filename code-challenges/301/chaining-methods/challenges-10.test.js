@@ -131,7 +131,10 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-    // Solution code here...
+    return data.reduce((accumulator, character) => {
+        if (character.height > accumulator.height) accumulator = character;
+        return accumulator;
+    }, { height: 0 }).name;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -230,7 +233,7 @@ describe('Testing challenge 4', () => {
     });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
     test('It should return the name of the shortest character', () => {
         expect(findShortest(starWarsData)).toStrictEqual('R2-D2');
     });
