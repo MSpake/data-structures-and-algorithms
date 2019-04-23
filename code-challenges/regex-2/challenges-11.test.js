@@ -54,7 +54,8 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  //so close, but not working
+  return /^\(?\d{3}\)?(\s|-)?\d{3}(\s|-)?\d{4}$/.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,7 +68,10 @@ findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])
 ------------------------------------------------------------------------------------------------ */
 
 const findTagNames = elements => {
-  // Solution code here...
+  //seems that elements is an object? Having weird issues with this one.
+  console.log(typeof elements);
+  const tags = elements.map(string => string.match(/\/\w+/g));
+  return tags;
 };
 
 /* ------------------------------------------------------------------------------------------------
