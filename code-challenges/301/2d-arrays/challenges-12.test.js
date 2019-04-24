@@ -110,7 +110,13 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
-  // Solution code here...
+  let total = 1;
+  for (let i in numbers) {
+    for (let j in numbers[i]) {
+      total = total * numbers[i][j];
+    }
+  }
+  return total;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -235,7 +241,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should multiply all the numbers together', () => {
     expect(calculateProduct([
       [1, 2],
