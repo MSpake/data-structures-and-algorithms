@@ -69,7 +69,13 @@ const errands = [{
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  let totalTreats = 0;
+  for (let i in arr) {
+    for (let j in arr[i].items) {
+      if (arr[i].items[j].name === 'Treats') totalTreats += arr[i].items[j].quantity;
+    }
+  }
+  return totalTreats;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -203,7 +209,7 @@ describe('Testing challenge 2', () => {
 });
 
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the number 24', () => {
     expect(howManyTreats(errands)).toStrictEqual(24);
   });
