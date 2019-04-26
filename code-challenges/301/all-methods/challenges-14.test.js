@@ -149,7 +149,25 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  // Solution code here...
+  let winner = false;
+  const x = move => (move === 'X');
+  const o = move => (move === 'O');
+
+  let d1 = [board[0][0], board[1][1], board[2][2]];
+  let d2 = [board[2][0], board[1][1], board[0][2]];
+
+  if (d1.every(x) || d1.every(o)) winner = true;
+  if (d2.every(x) || d2.every(o)) winner = true;
+
+  for (let i in board) {
+    if (board[i].every(x) || board[i].every(o)) winner = true;
+    let col = [];
+    for (let j in board) {
+      col.push(board[j][i]);
+    }
+    if (col.every(x) || col.every(o)) winner = true;
+  }
+  return winner;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -217,7 +235,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return true if there are three in a row', () => {
     expect(detectTicTacToeWin([
       ['X', '', 'O'],
