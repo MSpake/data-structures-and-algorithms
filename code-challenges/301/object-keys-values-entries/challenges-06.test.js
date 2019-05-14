@@ -11,7 +11,7 @@ const courseInfo = {
   name: 'Code 301',
   duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
-  finalExam: true
+  finalExam: true,
 };
 
 const getCourseKeys = (obj) => {
@@ -29,44 +29,44 @@ let characters = [{
   name: 'Eddard',
   spouse: 'Catelyn',
   children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-  house: 'Stark'
+  house: 'Stark',
 },
 {
   name: 'Jon A.',
   spouse: 'Lysa',
   children: ['Robin'],
-  house: 'Arryn'
+  house: 'Arryn',
 },
 {
   name: 'Cersei',
   spouse: 'Robert',
   children: ['Joffrey', 'Myrcella', 'Tommen'],
-  house: 'Lannister'
+  house: 'Lannister',
 },
 {
   name: 'Daenarys',
   spouse: 'Khal Drogo',
   children: ['Drogon', 'Rhaegal', 'Viserion'],
-  house: 'Targaryen'
+  house: 'Targaryen',
 },
 {
   name: 'Mace',
   spouse: 'Alerie',
   children: ['Margaery', 'Loras'],
-  house: 'Tyrell'
+  house: 'Tyrell',
 },
 {
   name: 'Sansa',
   spouse: 'Tyrion',
   children: [],
-  house: 'Stark'
+  house: 'Stark',
 },
 {
   name: 'Jon S.',
   spouse: null,
   children: [],
-  house: 'Snow'
-}
+  house: 'Snow',
+},
 ];
 
 const totalCharacters = (arr) => {
