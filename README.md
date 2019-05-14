@@ -1,1 +1,21 @@
-# data-structures-and-algorithms
+# Data Structures and Algorithms  
+  
+* Code Challenges  
+  * 301  
+    * [2d Arrays](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/2d-arrays)  
+    * [All Methods](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/all-methods)  
+    * [Chaining Methods](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/chaining-methods)  
+    * [Filter](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/filter)  
+    * [For Each](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/for-each)  
+    * [Map](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/map)  
+    * [Objects: Kyes, Values, Entries](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/object-keys-values-entries)  
+    * [Reduce](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/reduce)  
+    * [Regex Part 2](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/regex-2)  
+    * [Regex Part 1](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/regex-part1)  
+    * [Sort](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/sort)  
+    * [Split, Join, Slice, Splice](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/split-join-slice-splice)  
+    * [String Manipulation](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/string-manip)  
+    * [Value vs. Reference](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/value-vs-reference)
+
+  * 401  
+    * [Array reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverse)  
