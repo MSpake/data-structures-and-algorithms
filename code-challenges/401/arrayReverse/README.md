@@ -1,7 +1,7 @@
 # Reverse an Array   
 Reverses the order of elements in an array.  
-
-[Pull Request](https://github.com/MSpake/data-structures-and-algorithms/pull/18)
+  
+[Pull Request](https://github.com/MSpake/data-structures-and-algorithms/pull/18)  
 [travis](https://www.travis-ci.com/MSpake/data-structures-and-algorithms)  
   
 ## Challenge  
