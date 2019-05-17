@@ -1,5 +1,5 @@
 function arrayShift(arr, newVal) {
-  if((typeof arr) !== 'object') return null; 
+  if(!Array.isArray(arr)) return null; 
   if(arr.length === 0) return [newVal];
 
   for(let i = arr.length; i > Math.floor(arr.length/2); i--) {
@@ -22,5 +22,6 @@ describe('Inserts a new entry into the venter index of an array', () => {
   });
   it('Only acccepts arrays', () => {
     expect(arrayShift('hello', 12)).toBeNull();
+    expect(arrayShift({0: 1, 1: 2}, 12)).toBeNull();
   });
 });
