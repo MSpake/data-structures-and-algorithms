@@ -19,3 +19,4 @@
 
   * 401  
     * [Array reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverse)  
+    * [Array Shift](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayShift)  
