@@ -16,6 +16,7 @@ class LinkedList {
   
       if(!this.head) {
         this.head = node;
+        this.tail = node;
         return this;
       }
   
@@ -29,8 +30,25 @@ class LinkedList {
     return this;
   }
 
-  append(value) {
-    let node = new Node(value);
+  append(...values) {
+    let vals = [...values];
+
+    vals.forEach( value => {
+      let node = new Node(value);
+
+      if(!this.head) {
+        this.head = node;
+        this.tail = node;
+        return this;
+      }
+
+      let current = this.tail;
+      current.next = node;
+      this.tail = current.next;
+      current = current.next;
+    });
+
+    return this;
   }
 
   includes(value) {

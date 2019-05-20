@@ -12,14 +12,21 @@ describe('Linked Lists', () => {
     expect(testList.head).toBeNull();
   });
 
-  // Can properly insert into the linked list
   it('Can add a new value to the beginning of the list', () => {
     expect(list.insert('first value').head.value).toEqual('first value');
   });
-  // Can properly insert into the linked list
-  xit('Can append a new value to the end of the list', () => {
-    expect(list.append('latest value').value).toEqual('latest value'); 
+
+  it('Can append a new value to the end of the list', () => {
+    list.append('latest value');
+    expect(list.tail.value).toEqual('latest value'); 
     expect(list.tail.next).toBeNull();
+  });
+
+  it('appending to an empty list sets both head and tail', () => {
+    const testList = new LinkedList;
+    testList.append('new item');
+    expect(testList.head.value).toEqual('new item');
+    expect(testList.tail.value).toEqual('new item');
   });
 
   // The head property will properly point to the first node in the linked list 
@@ -38,16 +45,23 @@ describe('Linked Lists', () => {
     expect(list.includes('test')).toBeTruthy();
   });
 
+  it('can append more than one node at a time', () => {
+    list.append('appended', 6, 7);
+    expect(list.tail.value).toEqual(7);
+    expect(list.includes('appended')).toBeTruthy();
+  });
+
   // Will return true when finding a value within the linked list that exists
   it('.includes(val) returns true if the given value is stored in the list, else returns false', () => {
     expect(list.includes(2)).toBeTruthy();
-    expect(list.includes('first value')).toBeTruthy();
+    expect(list.includes('latest value')).toBeTruthy();
+    expect(list.includes(7)).toBeTruthy();
     expect(list.includes('nope')).not.toBeTruthy();
   });
 
   // Can properly return a collection of all the values that exist in the linked list
   it('.print() returns an array containing all the values in the list', () => {
-    expect(list.print()).toEqual(expect.arrayContaining([ 5, 4, 'test', 3, 2, 'first value' ]));
+    expect(list.print()).toEqual([ 5, 4, 'test', 3, 2, 'first value', 'latest value', 'appended', 6, 7 ]);
     console.log(list.print());
   });
 });
