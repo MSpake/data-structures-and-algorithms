@@ -9,7 +9,7 @@ class LinkedList {
   }
 
   insert(...values) {
-    let vals = [...values];
+    let vals = [...values].reverse();
 
     vals.forEach( value => {
       let node = new Node(value);
@@ -76,18 +76,72 @@ class LinkedList {
 
     return allelements;    
   }
+
+  insertBefore(value, newVal) {
+    let node = new Node(newVal);
+
+    if(!this.head) {
+      this.head = node;
+      this.tail = node;
+      return this;
+    }
+
+    if (this.head.value === value) {
+      node.next = this.head;
+      this.head = node;
+      return this;
+    }
+    
+    let current = this.head;
+    while(current.next.value !== value) {
+      current = current.next;
+    }
+    node.next = current.next;
+    current.next = node;
+    return this;
+  }
+
+  insertAfter(value, newVal) {
+    let node = new Node(newVal);
+    
+    if(!this.head) {
+      this.head = node;
+      this.tail = node;
+      return this;
+    }
+
+    let current = this.head;
+    while(current.value !== value){
+      current = current.next;
+    }
+
+    node.next = current.next;
+    current.next = node;
+    current = current.next;
+    if(!current.next) this.tail = current;
+
+    return this;
+  }
+
+  delete(value) {
+    
+    if(this.head.value === value) {
+      this.head = this.head.next;
+      return this;
+    }
+
+    let current = this.head;
+    while(current.next.value !== value) {
+      current = current.next;
+    }
+
+    current.next = current.next.next;
+    if(!current.next) this.tail = current;
+    return this;
+  }
 }
 
 module.exports = LinkedList;
-
-// Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-// Define a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
-// Define a method called print which takes in no arguments and returns a collection all of the current Node values in the Linked List.
-
-
-
-
-
 
 
 // At no time should an exception or stack trace be shown to the end user. Catch and handle any such exceptions and return a printed value or operation which cleanly represents the state and either stops execution cleanly, or provides the user with clear direction and output.
