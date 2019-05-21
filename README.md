@@ -18,5 +18,8 @@
     * [Value vs. Reference](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/301/value-vs-reference)
 
   * 401  
-    * [Array reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverse)  
+    * [Array Reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverse)  
     * [Array Shift](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayShift)  
+    
+* Data Structures  
+  * [Linked List](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/linkedList)  

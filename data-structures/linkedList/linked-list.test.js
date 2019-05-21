@@ -29,7 +29,6 @@ describe('Linked Lists', () => {
     expect(testList.tail.value).toEqual('new item');
   });
 
-  // The head property will properly point to the first node in the linked list 
   it('head property always points to the first item in the list', () => {
     list.insert(2);
     expect(list.head.value).toEqual(2);
@@ -38,20 +37,18 @@ describe('Linked Lists', () => {
 
   });
 
-  // Can properly insert multiple nodes into the linked list
-  it('can insert more than one node at a time', () => {
+  it('can insert more than one node at a time at the head of the list', () => {
     list.insert('test', 4, 5);
-    expect(list.head.value).toEqual(5);
-    expect(list.includes('test')).toBeTruthy();
+    expect(list.head.value).toEqual('test');
+    expect(list.includes(5)).toBeTruthy();
   });
 
-  it('can append more than one node at a time', () => {
+  it('can append more than one node at a time to the end of the list', () => {
     list.append('appended', 6, 7);
     expect(list.tail.value).toEqual(7);
     expect(list.includes('appended')).toBeTruthy();
   });
 
-  // Will return true when finding a value within the linked list that exists
   it('.includes(val) returns true if the given value is stored in the list, else returns false', () => {
     expect(list.includes(2)).toBeTruthy();
     expect(list.includes('latest value')).toBeTruthy();
@@ -59,10 +56,36 @@ describe('Linked Lists', () => {
     expect(list.includes('nope')).not.toBeTruthy();
   });
 
-  // Can properly return a collection of all the values that exist in the linked list
   it('.print() returns an array containing all the values in the list', () => {
-    expect(list.print()).toEqual([ 5, 4, 'test', 3, 2, 'first value', 'latest value', 'appended', 6, 7 ]);
-    console.log(list.print());
+    expect(list.print()).toEqual([ 'test', 4, 5, 3, 2, 'first value', 'latest value', 'appended', 6, 7 ]);
+  });
+
+
+  const secondList = new LinkedList;
+  secondList.insert(1,2,3,4,5);
+
+  it('can insert a new node before a given value', () => {
+    secondList.insertBefore(3, 'added before');
+    expect(secondList.print()[2]).toEqual('added before');
+    secondList.insertBefore(1, 'inserted before');
+    expect(secondList.head.value).toEqual('inserted before');
+  });
+
+  it('can insert a new node after a given value', () => {
+    secondList.insertAfter(3, 'added after');
+    expect(secondList.print()[5]).toEqual('added after');
+    secondList.insertAfter(5, 'inserted after');
+    expect(secondList.tail.value).toEqual('inserted after');
+  });
+  //can delete a node
+  it('given a value, it deletes the node containing that value', () => {
+    secondList.delete('inserted before');
+    expect(secondList.head.value).toEqual(1);
+    secondList.delete('inserted after');
+    console.log(secondList.print());
+    expect(secondList.tail.value).toEqual(5);
+    secondList.delete(3);
+    expect(secondList.includes(3)).not.toBeTruthy();
   });
 });
 
