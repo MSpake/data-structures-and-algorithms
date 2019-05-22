@@ -19,4 +19,6 @@ print(), includes(), insertBefore(), insertAfter(), and delete() have to travers
 **delete(val)** - Deletes the given value from the list  
     
 ## Whitboard  
-![whiteboard](https://github.com/MSpake/data-structures-and-algorithms/blob/master/assets/linked_list.jpg)
+![whiteboard](https://github.com/MSpake/data-structures-and-algorithms/blob/master/assets/linked_list.jpg)  
+![whiteboard2](https://github.com/MSpake/data-structures-and-algorithms/blob/master/assets/linked_list_k_from_end.jpg)
+

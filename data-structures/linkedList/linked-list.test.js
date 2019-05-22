@@ -77,7 +77,7 @@ describe('Linked Lists', () => {
     secondList.insertAfter(5, 'inserted after');
     expect(secondList.tail.value).toEqual('inserted after');
   });
-  //can delete a node
+
   it('given a value, it deletes the node containing that value', () => {
     secondList.delete('inserted before');
     expect(secondList.head.value).toEqual(1);
@@ -86,6 +86,14 @@ describe('Linked Lists', () => {
     expect(secondList.tail.value).toEqual(5);
     secondList.delete(3);
     expect(secondList.includes(3)).not.toBeTruthy();
+  });
+
+  it('given a value (k), it returns the value of the node k from the end of the list', () => {
+    expect(secondList.kFromEnd(0)).toEqual(5);
+    console.log(secondList.print());
+    expect(secondList.kFromEnd(5)).toEqual(1);
+    expect(secondList.kFromEnd(6)).toBeNull();
+    expect(secondList.kFromEnd(-3)).toBeNull();
   });
 });
 

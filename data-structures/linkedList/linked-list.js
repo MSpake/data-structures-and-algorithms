@@ -139,6 +139,15 @@ class LinkedList {
     if(!current.next) this.tail = current;
     return this;
   }
+
+  kFromEnd(num) {
+    const values = this.print();
+    if(num >= 0 && num < values.length) {
+      const index = values.length - 1 - num;
+      return values[index];
+    }
+    return null;
+  }
 }
 
 module.exports = LinkedList;
