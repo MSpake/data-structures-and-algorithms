@@ -20,6 +20,8 @@
   * 401  
     * [Array Reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverse)  
     * [Array Shift](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayShift)  
+    * [Merge Linked Lists](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/llMerge)  
+
     
 * Data Structures  
   * [Linked List](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/linkedList)  
