@@ -1,14 +1,6 @@
-function arrayShift(arr, newVal) {
-  if(!Array.isArray(arr)) return null; 
-  if(arr.length === 0) return [newVal];
+'use strict';
 
-  for(let i = arr.length; i > Math.floor(arr.length/2); i--) {
-    arr[i] = arr[i-1];
-  }
-
-  arr[Math.floor(arr.length/2)] = newVal;
-  return arr;
-}
+const arrayShift = require('./array-shift.js');
 
 describe('Inserts a new entry into the venter index of an array', () => {
   it('takes in an array and a value, returns the array with the new value inserted into the center index', () => {
