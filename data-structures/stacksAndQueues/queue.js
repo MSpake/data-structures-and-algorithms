@@ -17,9 +17,10 @@ class Queue {
       if(!this.front) {
         this.front = node;
         this.rear = node;
+      } else {
+        this.rear.next = node;
+        this.rear = node;
       }
-      this.rear.next = node;
-      this.rear = node;
     });
   }
 
@@ -27,6 +28,7 @@ class Queue {
     if(!this.front) return null;
     let node = this.front;
     this.front = node.next || null;
+    if (this.front === null) this.rear = null; 
     return node.value || null;
   }
 

@@ -22,6 +22,7 @@
     * [Array Shift](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayShift)  
     * [Merge Linked Lists](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/llMerge)  
     * [Queue with Stacks](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/queueWithStacks)  
+    * [Fifo Animal Shelter](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/fifoAnimalShelter)  
 
     
 * Data Structures  
