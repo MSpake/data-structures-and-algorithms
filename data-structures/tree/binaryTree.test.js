@@ -18,11 +18,8 @@ describe('Binary Tree class', () => {
 
   it('can add a left and right child to the root node', () => {
     const testTree = new BinaryTree(1);
-    console.log(testTree.root);
     testTree.add(2);
-    console.log(testTree.root);
     testTree.add(3);
-    console.log(testTree.root);
 
     expect(testTree.root.left).not.toBeNull();
     expect(testTree.root.right).not.toBeNull();

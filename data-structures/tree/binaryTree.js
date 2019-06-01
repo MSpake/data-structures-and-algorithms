@@ -13,6 +13,7 @@ class BinaryTree {
     const node = new Node(value);
     if(!this.root) {
       this.root = node;
+      return;
     }
 
     const nodeHolder = new Queue;
