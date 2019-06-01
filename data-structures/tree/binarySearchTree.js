@@ -3,8 +3,17 @@
 const Node = require('./node.js');
 
 class BinarySearchTree {
-  constructor() {
+  constructor(rootValue) {
+    this.root = null;
+    if(rootValue) this.root = new Node(rootValue);
+  }
 
+  add(value) {
+
+  }
+
+  contains() {
+    
   }
 }
 
