@@ -24,6 +24,7 @@
     * [Queue with Stacks](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/queueWithStacks)  
     * [Fifo Animal Shelter](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/fifoAnimalShelter)  
     * [FizzBuzz Tree](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/fizzBuzzTree)  
+    * [Depth of a Value](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/depth)  
 
     
 * Data Structures  
