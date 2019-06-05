@@ -38,6 +38,10 @@ describe('Binary Search Tree class', () => {
     expect(testTree.contains(200)).toBeFalsy();
   });
 
+  it('can find the maximum value in the tree', () => {
+    expect(testTree.maxValue()).toBe(15);
+  });
+
 });
 
 // Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.

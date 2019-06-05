@@ -83,6 +83,19 @@ class BinaryTree {
     return values;
 
   }
+
+  maxValue() {
+    const queue = new Queue;
+    let largest = this.root.value;
+    queue.enqueue(this.root);
+    while(queue.peek()) {
+      const nodeToCheck = queue.dequeue();
+      if(nodeToCheck.left) queue.enqueue(nodeToCheck.left);
+      if(nodeToCheck.right) queue.enqueue(nodeToCheck.right);
+      if(nodeToCheck.value > largest) largest = nodeToCheck.value;
+    }
+    return largest;
+  }
 }
 
 module.exports = BinaryTree;
