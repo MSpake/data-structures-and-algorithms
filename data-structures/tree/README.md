@@ -18,3 +18,8 @@ Binary Tree:
 Binary Search Tree:  
 * add(value) - Adds a value to the tree, smaller values to the left, larger values to the right.    
 * contains(value) - Determines whether on nor a value is in the tree, returns true or false.  
+  
+## Whiteboards:  
+  
+**Find Maximum Value**  
+![whiteboard](https://github.com/MSpake/data-structures-and-algorithms/blob/master/assets/find-maximum-value.jpg)

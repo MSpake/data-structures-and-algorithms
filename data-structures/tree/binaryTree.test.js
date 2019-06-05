@@ -27,6 +27,18 @@ describe('Binary Tree class', () => {
     expect(testTree.root.right.value).toBe(3);
   });
 
+
+  it('can find the maximum value in the tree', () => {
+    const testTree = new BinaryTree(10);
+    testTree.add(6);
+    testTree.add(12);
+    testTree.add(20);
+    testTree.add(2);
+    testTree.add(15);
+
+    expect(testTree.maxValue()).toBe(20);
+  });
+
   describe('Binary tree traversal', () => {
     const testTree = new BinaryTree(1);
     testTree.add(2);

@@ -58,6 +58,14 @@ class BinarySearchTree {
     return loop(this.root);
     
   }
+
+  maxValue() {
+    let current = this.root;
+    while(current.right){
+      current = current.right;
+    }
+    return current.value;
+  }
 }
 
 module.exports = BinarySearchTree;
