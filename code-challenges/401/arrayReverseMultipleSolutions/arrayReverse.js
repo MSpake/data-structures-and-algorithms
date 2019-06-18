@@ -5,7 +5,7 @@ const Stack = require('../../../data-structures/stacksAndQueues/stack.js');
 function reverseWithNewArray(arr) {
   const reversedArr = [];
   for(let i = arr.length; i > 0; i--) {
-    reversedArr.push(arr[i]);
+    reversedArr.push(arr[i-1]);
   }
   return reversedArr;
 }
@@ -32,6 +32,8 @@ function reverseRecursively(arr){
   return rebuilt;
 }
 
-function reverseSwap(arr) {
-  
-}
+module.exports = {
+  reverseWithNewArray,
+  reverseWithStacks,
+  reverseRecursively,
+};
