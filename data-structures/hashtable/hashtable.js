@@ -21,8 +21,11 @@ class Hashtable {
     }
   }
 
-  contains() {
-
+  contains(key) {
+    let hashedKey = this.hash(key);
+    if(this.internal[hashedKey] === null) return false;
+    else if (!this.internal[hashedKey][key]) return true;
+    else return true;
   }
 
   hash(key) {

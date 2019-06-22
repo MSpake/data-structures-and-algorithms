@@ -19,6 +19,8 @@ describe('Hashtables', () => {
   });
 
   it('Has checks if the key is present', () => {
-    
+    expect(testHash.contains('first')).toBeTruthy();
+    expect(testHash.contains(12)).toBeTruthy();
+    expect(testHash.contains('avocado')).toBeFalsy();
   });
 });
