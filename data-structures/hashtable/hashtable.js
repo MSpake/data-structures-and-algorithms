@@ -15,7 +15,10 @@ class Hashtable {
 
   get(key) {
     let hashedKey = this.hash(key);
-    
+    if(this.internal[hashedKey] === null) return null;
+    else{
+      return this.internal[hashedKey][key];
+    }
   }
 
   contains() {
