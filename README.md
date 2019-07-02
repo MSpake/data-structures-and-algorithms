@@ -26,7 +26,7 @@
     * [FizzBuzz Tree](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/fizzBuzzTree)  
     * [Depth of a Value](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/depth)  
     * [Array Reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverseMultipleSolutions)  
-
+    * [Flag Sort](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/flagSort)  
     
 * Data Structures  
   * [Linked List](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/linkedList)  
