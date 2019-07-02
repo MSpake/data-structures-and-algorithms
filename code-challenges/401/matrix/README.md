@@ -8,4 +8,4 @@ Given a 2D array where the rows are sorted and contain only 0 and 1. Return the 
 Not implemented yet. Will be binary search based.  
 
 ## Solution  
-![whiteboard](https://github.com/MSpake/data-structures-and-algorithms/blob/master/assets/matrix.jpg)
+![whiteboard](https://github.com/MSpake/data-structures-and-algorithms/blob/matrix/assets/matrix.jpg)
