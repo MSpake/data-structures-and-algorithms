@@ -25,11 +25,17 @@
     * [Fifo Animal Shelter](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/fifoAnimalShelter)  
     * [FizzBuzz Tree](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/fizzBuzzTree)  
     * [Depth of a Value](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/depth)  
-    * [Array Reversal](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverseMultipleSolutions)  
+    * [Array Reversal Multiple Solutions](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverseMultipleSolutions)  
+    * [Find Pair](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/findPair)  
+    * [Find Path](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/findPath)  
+    * [Find Second Largest](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/findSecondLargest)  
+    * [Matrix](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/matrix)  
 
     
 * Data Structures  
   * [Linked List](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/linkedList)  
   * [Stack and Queue](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/stacksAndQueues)  
   * [Trees](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/tree)  
+  * [Hashtable](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/hashtable)  
+
 
