@@ -29,6 +29,7 @@
     * [Find Pair](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/findPair)  
     * [Find Path](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/findPath)  
     * [Find Second Largest](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/findSecondLargest)  
+    * [Matrix](https://github.com/MSpake/data-structures-and-algorithms/tree/master/code-challenges/401/matrix)  
 
     
 * Data Structures  
