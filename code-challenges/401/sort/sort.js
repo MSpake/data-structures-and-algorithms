@@ -8,6 +8,8 @@ const _swap = (items, indexA, indexB) => {
   items[indexB] = helper;
 };
 
+//Instead of tracking a single 'first high' variable, I'm tracking two markers 'first high' and 'last low' that indicate the partitions between less than, equal to, and greater than the pivot
+//Acknowledgement to Jag who figured out this implementation approach
 const _sortWith3Partitions = (items, leftIndex, rightIndex) => {
 
   if(leftIndex < rightIndex){
