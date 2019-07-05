@@ -49,11 +49,17 @@ graph.addEdge(vertex40, vertex50);
 graph.addEdge(vertex20, vertex25, 10);
 graph.addEdge(vertex15, vertex25, 10000);
 
-let paths = Dijkstra(graph,vertex5, vertex25);
-console.log(paths);
+let dijkstraPaths = Dijkstra(graph,vertex5, vertex25);
+let bfsPaths = Dijkstra(graph,vertex5, vertex25);
+let dfspaths = Dijkstra(graph,vertex5, vertex25);
+
+console.log('\nDijkstra', dijkstraPaths);
+console.log('\nBFS', bfsPaths);
+console.log('\nDFS', dfspaths);
 
 
-// HW 1
+
+// HW 1 <--- Morgana - I picked this one 
 // Change arrays to linked lists in:
 // Graph class
 // BFS & DFS

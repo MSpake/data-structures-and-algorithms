@@ -1,5 +1,7 @@
 'use strict';
 
+const Linkedlist = require('../linkedList/linked-list');
+
 module.exports = class Graph{
   constructor(){
     // Vinicio - adjacency list
@@ -7,7 +9,7 @@ module.exports = class Graph{
   }
 
   addVertex(vertex) {
-    this._adjacencyList.set(vertex, []); // ;)
+    this._adjacencyList.set(vertex, new Linkedlist); //Morgana - changed to a linked list instance
   }
 
   // Vinicio - this edges are directed
@@ -21,14 +23,16 @@ module.exports = class Graph{
       vertex: endVertex,
       weight,
     };
-
-    this._adjacencyList.get(startVertex).push(edgeData);
+    //Morgana - changed this to insert instead of push
+    this._adjacencyList.get(startVertex).insert(edgeData);
   }
 
   getNeighbors(vertex){
-    if(!this._adjacencyList.has(vertex)){
+    if(!this._adjacencyList.has(vertex)) {
       throw new Error('_INVALID_VERTEX_');
     }
-    return [...this._adjacencyList.get(vertex)];
+    //Morgana - added a check to make sure the list isn't empty, then return either an array of the values or an empty array
+    const vertexData = this._adjacencyList.get(vertex);
+    return vertexData.head ? vertexData.print() : [];
   }
 };
