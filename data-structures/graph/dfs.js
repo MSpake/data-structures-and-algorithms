@@ -1,7 +1,10 @@
 'use strict';
 
+const Stack = require('../stacksAndQueues/stack');
+
 module.exports = (graph, startVertex, goalVertex) => {
-  const stack = []; // Vinicio - HW, make this a real queue - https://www.npmjs.com/package/queue-fifo
+  //Morgana - pretty sure this one is supposed to be a stack not a queue, so I did that.
+  const stack = new Stack; // Vinicio - HW, make this a real queue - https://www.npmjs.com/package/queue-fifo 
   const visitedVertices = new Set();
 
   const paths = new Map();
@@ -9,8 +12,8 @@ module.exports = (graph, startVertex, goalVertex) => {
   stack.push(startVertex);
   visitedVertices.add(startVertex);
 
-
-  while(stack.length > 0) {
+  //Morgana - changed this from length to size
+  while(stack.size > 0) {
     // dequeue
     // check for goal
     // loop over all the neighobrs

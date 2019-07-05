@@ -10,6 +10,7 @@
   "author": "Vinicio Vladimir Sanchez Trejo <vladimirsan@gmail.com> (http://vladimirsan.com)",
   "license": "ISC",
   "dependencies": {
-    "js-priority-queue": "^0.1.5"
+    "js-priority-queue": "^0.1.5",
+    "queue-fifo": "^0.2.6"
   }
 }
