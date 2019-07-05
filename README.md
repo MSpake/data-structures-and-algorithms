@@ -33,4 +33,6 @@
   * [Linked List](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/linkedList)  
   * [Stack and Queue](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/stacksAndQueues)  
   * [Trees](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/tree)  
+  * [Graphs](https://github.com/MSpake/data-structures-and-algorithms/tree/master/data-structures/graph)  
+
 
