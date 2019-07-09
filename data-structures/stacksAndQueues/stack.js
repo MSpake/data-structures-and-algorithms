@@ -6,6 +6,7 @@ class Stack {
   constructor() {
     this.top = null;
     this.head = null;
+    this.size = 0;
   }
 
   push(...entries) {
@@ -17,6 +18,7 @@ class Stack {
       if(!this.top) this.top = node.value;
       node.next = this.top;
       this.top = node;
+      this.size++;
     });
   }
 
@@ -24,6 +26,7 @@ class Stack {
     if(!this.top) return null;
     let node = this.top;
     this.top = this.top.next || null;
+    this.size--;
     return node.value || null;
   }
 
