@@ -10,21 +10,24 @@ function traverse(adjList, key, set){
   while(queue.peek) {
     const current = queue.dequeue();
     set.add(current);
+    console.log(current);
 
-    let vertexToAdd = adjList.get(current).head ? adjList[current].head : null;
+    let vertexToAdd = adjList.get(current).head ? adjList.get(current).head : null;
 
     while(vertexToAdd) {
-      if(!set.has(vertexToAdd)) queue.enqueue(vertexToAdd);
+      console.log(queue);
+      if(!set.has(vertexToAdd.value.vertex)) queue.enqueue(vertexToAdd.value.vertex);
+
       vertexToAdd = vertexToAdd.next;
     }
   }
 }
 
-function hasIslands(graph) {
+function countIslands(graph) {
   const set = new Set();
   let count = 0;
-
-  Object.keys(graph._adjacencyList).forEach( key => {
+  
+  graph._adjacencyList.forEach( (value, key) => {
     if(!set.has(key)) {
       traverse(graph._adjacencyList, key, set);
       count++;
@@ -33,3 +36,5 @@ function hasIslands(graph) {
 
   return count;
 }
+
+module.exports = countIslands;
